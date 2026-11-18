@@ -29,8 +29,11 @@ jobs:
         run: |
           sudo apt-get update -qq
           sudo apt-get install -y -qq ffmpeg python3-pip >/dev/null
-          npm i -g openclaw@latest >/dev/null 2>&1
-          pip install -q yt-dlp faster-whisper
+          npm i -g openclaw@latest 2>&1 | tail -5
+          command -v openclaw || { echo "openclaw missing"; exit 1; }
+          python3 -m pip install -q --break-system-packages yt-dlp 2>&1 | tail -3 || true
+          python3 -m pip install -q --break-system-packages faster-whisper 2>&1 | tail -3 || echo "whisper skipped"
+          command -v yt-dlp || python3 -m pip install -q --user yt-dlp || true
 
       - name: free model router
         run: |
