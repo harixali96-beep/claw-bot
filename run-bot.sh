@@ -47,8 +47,16 @@ echo "[bot] starting router"
 ( cd /tmp/freellmapi/server && PORT=3001 HOST=127.0.0.1 nohup node dist/index.js >/tmp/freellm.log 2>&1 & )
 sleep 10
 echo "[bot] starting gateway"
-( nohup openclaw gateway run >/tmp/oc-gateway.log 2>&1 & )
-sleep 30
+nohup openclaw gateway run >/tmp/oc-gateway.log 2>&1 &
+GW_PID=$!
+sleep 25
+if ! kill -0 "$GW_PID" 2>/dev/null; then
+  echo "[bot] gateway exited, retrying once"
+  nohup openclaw gateway run --verbose >/tmp/oc-gateway2.log 2>&1 &
+  GW_PID=$!
+  sleep 25
+fi
+echo "[bot] gateway pid=$GW_PID alive=$(kill -0 "$GW_PID" 2>/dev/null && echo yes || echo no)"
 
 write_status() {
   local out="$REPO_DIR/status.txt"
@@ -66,7 +74,7 @@ write_status() {
   cd "$REPO_DIR" || return 0
   git config user.name "claw-bot" >/dev/null 2>&1
   git config user.email "bot@users.noreply.github.com" >/dev/null 2>&1
-  git add status.txt >/dev/null 2>&1
+  git add status.txt gw.log gw2.log >/dev/null 2>&1
   git commit -m "bot status [skip ci]" >/dev/null 2>&1 && git push >/dev/null 2>&1
 }
 write_status
