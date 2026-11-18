@@ -1,0 +1,366 @@
+[gateway] startup phase: entry.run-main-import starting total=71.6ms
+[gateway] startup phase: entry.run-main-import 32.0ms total=103.6ms start=71.6ms rssMb=74.7 heapUsedMb=11.3 workers=0 workerHeapSamples=0/0 workerHeapMb=0.0 workerHeapSource=cached
+[gateway] startup phase: cli.main.gateway-run-select-environment starting total=855.3ms
+[gateway] startup phase: cli.main.gateway-run-select-environment-imports starting total=855.3ms
+[gateway] startup phase: cli.main.gateway-run-select-environment-imports 3.5ms total=858.9ms start=855.3ms rssMb=198.6 heapUsedMb=75.7 workers=0 workerHeapSamples=0/0 workerHeapMb=0.0 workerHeapSource=cached
+[gateway] startup phase: cli.environment.config-guard starting total=859.4ms
+[gateway] startup phase: cli.environment.imports starting total=859.6ms
+[gateway] startup phase: cli.environment.imports 2.0ms total=861.6ms start=859.6ms rssMb=198.6 heapUsedMb=78.0 workers=0 workerHeapSamples=0/0 workerHeapMb=0.0 workerHeapSource=cached
+[gateway] startup phase: cli.environment.config-import starting total=862.8ms
+[gateway] startup phase: cli.environment.config-import 119.3ms total=982.1ms start=862.8ms rssMb=235.0 heapUsedMb=68.3 workers=0 workerHeapSamples=0/0 workerHeapMb=0.0 workerHeapSource=cached
+[gateway] startup phase: cli.environment.config-read starting total=982.3ms
+[gateway] startup phase: cli.environment.config-read 25.0ms total=1007.3ms start=982.3ms rssMb=235.6 heapUsedMb=75.2 workers=0 workerHeapSamples=0/0 workerHeapMb=0.0 workerHeapSource=cached
+[gateway] startup phase: cli.environment.config-recovery starting total=1007.9ms
+[gateway] startup phase: cli.environment.config-recovery 1.6ms total=1009.5ms start=1007.9ms rssMb=235.7 heapUsedMb=75.5 workers=0 workerHeapSamples=0/0 workerHeapMb=0.0 workerHeapSource=cached
+[gateway] startup phase: cli.environment.config-guard 151.0ms total=1010.4ms start=859.4ms rssMb=235.7 heapUsedMb=75.7 workers=0 workerHeapSamples=0/0 workerHeapMb=0.0 workerHeapSource=cached
+[gateway] startup phase: cli.environment.pin-runtime-paths starting total=1010.6ms
+[gateway] startup phase: cli.environment.pin-runtime-paths 0.2ms total=1010.8ms start=1010.6ms rssMb=235.7 heapUsedMb=75.8 workers=0 workerHeapSamples=0/0 workerHeapMb=0.0 workerHeapSource=cached
+[gateway] startup phase: cli.main.gateway-run-select-environment 155.6ms total=1010.9ms start=855.3ms rssMb=235.7 heapUsedMb=75.8 workers=0 workerHeapSamples=0/0 workerHeapMb=0.0 workerHeapSource=cached
+[gateway] startup phase: cli.main.gateway-run-imports starting total=1024.4ms
+[gateway] startup phase: cli.main.gateway-run-imports 2.8ms total=1027.2ms start=1024.4ms rssMb=240.1 heapUsedMb=85.1 workers=0 workerHeapSamples=0/0 workerHeapMb=0.0 workerHeapSource=cached
+[gateway] startup phase: cli.main.gateway-run-pre-bootstrap starting total=1035.7ms
+[gateway] startup phase: cli.environment.imports starting total=1035.9ms
+[gateway] startup phase: cli.environment.imports 0.1ms total=1036.0ms start=1035.9ms rssMb=243.7 heapUsedMb=89.0 workers=0 workerHeapSamples=0/0 workerHeapMb=0.0 workerHeapSource=cached
+[gateway] startup phase: cli.environment.config-import starting total=1036.8ms
+[gateway] startup phase: cli.environment.config-import 0.1ms total=1036.9ms start=1036.8ms rssMb=244.0 heapUsedMb=89.2 workers=0 workerHeapSamples=0/0 workerHeapMb=0.0 workerHeapSource=cached
+[gateway] startup phase: cli.environment.config-read starting total=1036.9ms
+[gateway] startup phase: cli.environment.config-read 2.1ms total=1039.1ms start=1036.9ms rssMb=244.9 heapUsedMb=90.1 workers=0 workerHeapSamples=0/0 workerHeapMb=0.0 workerHeapSource=cached
+[gateway] startup phase: cli.environment.config-recovery starting total=1039.3ms
+[gateway] startup phase: cli.environment.config-recovery 0.6ms total=1039.9ms start=1039.3ms rssMb=245.0 heapUsedMb=90.4 workers=0 workerHeapSamples=0/0 workerHeapMb=0.0 workerHeapSource=cached
+[gateway] startup phase: cli.main.gateway-run-pre-bootstrap 5.0ms total=1040.7ms start=1035.7ms rssMb=245.2 heapUsedMb=90.6 workers=0 workerHeapSamples=0/0 workerHeapMb=0.0 workerHeapSource=cached
+[gateway] startup phase: cli.main.gateway-run-bootstrap starting total=1040.8ms
+[gateway] startup phase: cli.command.config-ready starting total=1042.3ms
+[gateway] startup phase: cli.command.config-guard-import starting total=1042.4ms
+[gateway] startup phase: cli.command.config-guard-import 11.8ms total=1054.2ms start=1042.4ms rssMb=251.4 heapUsedMb=96.9 workers=0 workerHeapSamples=0/0 workerHeapMb=0.0 workerHeapSource=cached
+[gateway] startup phase: cli.bootstrap.admission.live-owner starting total=1066.1ms
+[gateway] startup phase: cli.bootstrap.admission.live-owner 8.2ms total=1074.3ms start=1066.1ms rssMb=265.2 heapUsedMb=71.2 workers=0 workerHeapSamples=0/0 workerHeapMb=0.0 workerHeapSource=cached
+[gateway] startup phase: cli.bootstrap.admission.core-config starting total=1074.4ms
+[gateway] startup phase: cli.bootstrap.admission.core-config 2.8ms total=1077.2ms start=1074.4ms rssMb=265.2 heapUsedMb=72.1 workers=0 workerHeapSamples=0/0 workerHeapMb=0.0 workerHeapSource=cached
+[gateway] startup phase: cli.bootstrap.admission.state-snapshot starting total=1077.3ms
+[gateway] startup phase: cli.bootstrap.admission.core-recovery starting total=1077.7ms
+[gateway] startup phase: cli.bootstrap.admission.core-recovery 0.5ms total=1078.3ms start=1077.7ms rssMb=265.2 heapUsedMb=72.3 workers=0 workerHeapSamples=0/0 workerHeapMb=0.0 workerHeapSource=cached
+[gateway] startup phase: cli.bootstrap.admission.database-runtime-import starting total=1078.5ms
+[gateway] startup phase: cli.bootstrap.admission.plugin-config starting total=1078.6ms
+[gateway] startup phase: cli.bootstrap.admission.plugin-metadata-completion starting total=1232.6ms
+[gateway] startup phase: cli.bootstrap.admission.plugin-metadata-completion 14.4ms total=1246.9ms start=1232.6ms rssMb=278.0 heapUsedMb=85.1 workers=0 workerHeapSamples=0/0 workerHeapMb=0.0 workerHeapSource=cached
+[gateway] startup phase: cli.bootstrap.admission.database-runtime-import 168.5ms total=1247.0ms start=1078.5ms rssMb=278.0 heapUsedMb=85.1 workers=0 workerHeapSamples=0/0 workerHeapMb=0.0 workerHeapSource=cached
+[gateway] startup phase: cli.bootstrap.admission.plugin-config 168.5ms total=1247.1ms start=1078.6ms registrySnapshotMs=92.34772500000008 manifestRegistryMs=9.991117999999915 ownerMapsMs=5.036292000000003 totalMs=108.10227600000007 indexPluginCount=75 manifestPluginCount=75 rssMb=278.0 heapUsedMb=85.1 workers=0 workerHeapSamples=0/0 workerHeapMb=0.0 workerHeapSource=cached
+[gateway] startup phase: cli.bootstrap.admission.database-readiness starting total=1247.1ms
+[gateway] startup phase: cli.bootstrap.admission.database-readiness 3.5ms total=1250.6ms start=1247.1ms agentCount=1 schemaProcessCount=0 schemaInspectionCount=0 schemaSnapshotCount=0 rssMb=278.1 heapUsedMb=85.4 workers=0 workerHeapSamples=0/0 workerHeapMb=0.0 workerHeapSource=cached
+[gateway] startup phase: cli.bootstrap.admission.session-runtime-import starting total=1250.7ms
+[gateway] startup phase: cli.bootstrap.admission.session-runtime-import 80.4ms total=1331.1ms start=1250.7ms rssMb=280.7 heapUsedMb=110.3 workers=0 workerHeapSamples=0/0 workerHeapMb=0.0 workerHeapSource=cached
+[gateway] startup phase: cli.bootstrap.admission.session-targets starting total=1331.2ms
+[gateway] startup phase: cli.bootstrap.admission.session-targets 1.0ms total=1332.2ms start=1331.2ms agentCount=1 registeredDatabaseCount=0 rssMb=280.7 heapUsedMb=110.4 workers=0 workerHeapSamples=0/0 workerHeapMb=0.0 workerHeapSource=cached
+[gateway] startup phase: cli.bootstrap.admission.session-readiness starting total=1332.2ms
+[gateway] startup phase: cli.bootstrap.admission.session-readiness 0.2ms total=1332.5ms start=1332.2ms targetCount=1 rssMb=280.7 heapUsedMb=110.4 workers=0 workerHeapSamples=0/0 workerHeapMb=0.0 workerHeapSource=cached
+[gateway] startup phase: cli.bootstrap.admission.workspace-runtime-import starting total=1332.5ms
+[gateway] startup phase: cli.bootstrap.admission.workspace-runtime-import 4.4ms total=1336.9ms start=1332.5ms rssMb=281.0 heapUsedMb=112.8 workers=0 workerHeapSamples=0/0 workerHeapMb=0.0 workerHeapSource=cached
+[gateway] startup phase: cli.bootstrap.admission.workspace-readiness starting total=1337.0ms
+[gateway] startup phase: cli.bootstrap.admission.workspace-readiness 1.9ms total=1338.9ms start=1337.0ms agentCount=1 rssMb=281.0 heapUsedMb=113.0 workers=0 workerHeapSamples=0/0 workerHeapMb=0.0 workerHeapSource=cached
+[gateway] startup phase: cli.bootstrap.admission.config-recovery starting total=1339.2ms
+[gateway] startup phase: cli.bootstrap.admission.config-recovery 0.7ms total=1339.9ms start=1339.2ms rssMb=281.0 heapUsedMb=113.1 workers=0 workerHeapSamples=0/0 workerHeapMb=0.0 workerHeapSource=cached
+[gateway] startup phase: cli.bootstrap.admission.state-snapshot 262.7ms total=1340.0ms start=1077.3ms rssMb=281.0 heapUsedMb=113.1 workers=0 workerHeapSamples=0/0 workerHeapMb=0.0 workerHeapSource=cached
+[gateway] startup phase: cli.bootstrap.admission.config-guard starting total=1340.1ms
+[gateway] startup phase: cli.bootstrap.admission.config-guard 1.2ms total=1341.3ms start=1340.1ms rssMb=281.0 heapUsedMb=113.3 workers=0 workerHeapSamples=0/0 workerHeapMb=0.0 workerHeapSource=cached
+[gateway] startup phase: cli.bootstrap.admission.device-identity starting total=1635.1ms
+[gateway] startup phase: cli.bootstrap.admission.device-identity 12.8ms total=1647.9ms start=1635.1ms rssMb=351.6 heapUsedMb=116.8 workers=1 workerHeapSamples=1/1 workerHeapMb=90.4 workerHeapSource=cached
+[gateway] startup phase: cli.bootstrap.webhook-completion-read starting total=1680.9ms
+[gateway] startup phase: cli.bootstrap.webhook-completion-read 0.9ms total=1681.7ms start=1680.9ms rssMb=352.0 heapUsedMb=128.4 workers=1 workerHeapSamples=1/1 workerHeapMb=90.4 workerHeapSource=cached
+[gateway] startup phase: cli.bootstrap.webhook-readiness starting total=1681.9ms
+[gateway] startup phase: cli.bootstrap.webhook-readiness 79.4ms total=1761.2ms start=1681.9ms rssMb=369.8 heapUsedMb=109.2 workers=1 workerHeapSamples=1/1 workerHeapMb=90.4 workerHeapSource=cached
+[gateway] startup phase: cli.bootstrap.plugin-plan-import starting total=2262.9ms
+[gateway] startup phase: cli.bootstrap.plugin-plan-import 4.0ms total=2266.8ms start=2262.9ms rssMb=469.3 heapUsedMb=116.6 workers=2 workerHeapSamples=2/2 workerHeapMb=140.8 workerHeapSource=cached
+[gateway] startup phase: cli.bootstrap.plugin-plan starting total=2267.0ms
+[gateway] startup phase: cli.bootstrap.plugin-plan 2.2ms total=2269.2ms start=2267.0ms rssMb=469.4 heapUsedMb=117.0 workers=2 workerHeapSamples=2/2 workerHeapMb=140.8 workerHeapSource=cached
+[gateway] startup phase: cli.command.config-ready 1229.6ms total=2271.9ms start=1042.3ms rssMb=469.6 heapUsedMb=117.8 workers=2 workerHeapSamples=2/2 workerHeapMb=140.8 workerHeapSource=cached
+[gateway] startup phase: cli.main.gateway-run-reload-environment starting total=2272.1ms
+[gateway] startup phase: cli.main.gateway-run-reload-environment 0.7ms total=2272.8ms start=2272.1ms rssMb=469.6 heapUsedMb=118.0 workers=2 workerHeapSamples=2/2 workerHeapMb=140.8 workerHeapSource=cached
+[gateway] startup phase: cli.main.gateway-run-bootstrap 1232.1ms total=2272.9ms start=1040.8ms rssMb=469.6 heapUsedMb=118.0 workers=2 workerHeapSamples=2/2 workerHeapMb=140.8 workerHeapSource=cached
+2026-11-18T22:24:45.966+00:00 [gateway] loading configuration…
+2026-11-18T22:24:46.056+00:00 [gateway] resolving authentication…
+2026-11-18T22:24:46.058+00:00 [gateway] starting...
+[gateway] startup phase: cli.bootstrap.lifecycle-runtime starting total=2530.8ms
+[gateway] startup phase: cli.bootstrap.lifecycle-runtime 49.2ms total=2580.0ms start=2530.8ms rssMb=496.3 heapUsedMb=161.9 workers=2 workerHeapSamples=2/2 workerHeapMb=140.8 workerHeapSource=cached
+[gateway] startup phase: cli.bootstrap.gateway-lock starting total=2588.2ms
+[gateway] startup phase: cli.bootstrap.gateway-lock 435.1ms total=3023.3ms start=2588.2ms rssMb=589.0 heapUsedMb=128.3 workers=6 workerHeapSamples=5/6 workerHeapMb=243.1 workerHeapSource=cached
+2026-11-18T22:24:46.553+00:00 [gateway] shutdown budget at startup: drain=75000ms shutdown=85000ms reserve=10000ms exitMargin=5000ms; source=systemd system hosted-compute-agent.service TimeoutStopUSec=90000ms
+[gateway] startup phase: cli.bootstrap.boot-lifecycle starting total=3053.1ms
+[gateway] startup phase: cli.bootstrap.boot-lifecycle 9.2ms total=3062.2ms start=3053.1ms rssMb=591.4 heapUsedMb=129.3 workers=6 workerHeapSamples=5/6 workerHeapMb=243.1 workerHeapSource=cached
+2026-11-18T22:24:46.747+00:00 [gateway] spawn broker ready pid=3926
+[gateway] startup phase: gateway.server-start-import starting total=3221.3ms
+[gateway] startup phase: gateway.server-start-import 403.7ms total=3625.0ms start=3221.3ms rssMb=631.8 heapUsedMb=180.1 workers=6 workerHeapSamples=5/6 workerHeapMb=243.1 workerHeapSource=cached
+2026-11-18T22:24:47.166+00:00 [gateway] startup phase: process.bootstrap 3636.7ms total=3636.7ms rssMb=632.0 heapUsedMb=184.9 workers=6 workerHeapSamples=5/6 workerHeapMb=243.1 workerHeapSource=cached
+2026-11-18T22:24:47.385+00:00 [gateway] startup phase: state.schema-preflight starting total=3856.3ms
+2026-11-18T22:24:47.525+00:00 [gateway] startup phase: state.schema-preflight 140.4ms total=3996.7ms rssMb=632.5 heapUsedMb=186.4 workers=6 workerHeapSamples=5/6 workerHeapMb=243.1 workerHeapSource=cached
+2026-11-18T22:24:47.541+00:00 [gateway] startup phase: config.auth starting total=4010.6ms
+2026-11-18T22:24:47.587+00:00 [gateway] startup phase: config.auth 47.3ms total=4057.9ms rssMb=634.4 heapUsedMb=201.5 workers=6 workerHeapSamples=5/6 workerHeapMb=243.1 workerHeapSource=cached
+2026-11-18T22:24:47.603+00:00 [gateway] startup phase: state.desktop-approval-admission starting total=4075.0ms
+2026-11-18T22:24:47.646+00:00 [gateway] startup phase: state.desktop-approval-admission 42.2ms total=4117.2ms rssMb=653.0 heapUsedMb=181.1 workers=6 workerHeapSamples=5/6 workerHeapMb=243.1 workerHeapSource=cached
+2026-11-18T22:24:47.646+00:00 [gateway] startup phase: sessions.admission starting total=4117.7ms
+2026-11-18T22:24:47.936+00:00 [gateway] startup phase: sessions.admission 289.8ms total=4407.5ms rssMb=751.6 heapUsedMb=199.2 workers=7 workerHeapSamples=6/7 workerHeapMb=277.7 workerHeapSource=cached
+2026-11-18T22:24:48.403+00:00 [gateway] starting HTTP server...
+2026-11-18T22:24:48.527+00:00 [health-monitor] started (interval: 300s, startup-grace: 60s, channel-connect-grace: 120s)
+2026-11-18T22:24:48.735+00:00 [gateway] startup phase: http.bound 0.0ms total=5206.4ms rssMb=801.3 heapUsedMb=221.3 workers=7 workerHeapSamples=6/7 workerHeapMb=277.7 workerHeapSource=cached
+2026-11-18T22:24:48.735+00:00 [gateway] startup phase: runtime.early starting total=5207.1ms
+2026-11-18T22:24:48.738+00:00 [gateway] startup phase: runtime.early.discovery starting total=5209.5ms
+2026-11-18T22:24:48.741+00:00 [gateway] startup phase: runtime.early.discovery 3.4ms total=5212.9ms rssMb=801.4 heapUsedMb=226.7 workers=7 workerHeapSamples=6/7 workerHeapMb=277.7 workerHeapSource=cached
+2026-11-18T22:24:48.742+00:00 [gateway] startup phase: runtime.early.lazy-runtime-imports starting total=5213.3ms
+2026-11-18T22:24:48.743+00:00 [gateway] startup phase: runtime.early.lazy-runtime-imports 1.4ms total=5214.7ms rssMb=801.4 heapUsedMb=229.4 workers=7 workerHeapSamples=6/7 workerHeapMb=277.7 workerHeapSource=cached
+2026-11-18T22:24:48.744+00:00 [gateway] startup phase: runtime.early.skills-listener starting total=5215.5ms
+2026-11-18T22:24:48.747+00:00 [gateway] startup phase: runtime.early.skills-listener 3.0ms total=5218.5ms rssMb=801.5 heapUsedMb=231.3 workers=7 workerHeapSamples=6/7 workerHeapMb=277.7 workerHeapSource=cached
+2026-11-18T22:24:48.747+00:00 [gateway] startup phase: runtime.early 11.8ms total=5218.9ms rssMb=801.5 heapUsedMb=231.3 workers=7 workerHeapSamples=6/7 workerHeapMb=277.7 workerHeapSource=cached
+2026-11-18T22:24:49.202+00:00 [gateway] startup phase: post-attach.system-ca starting total=5673.5ms
+2026-11-18T22:24:49.202+00:00 [gateway] startup phase: post-attach.system-ca 0.4ms total=5673.9ms rssMb=884.2 heapUsedMb=225.1 workers=8 workerHeapSamples=7/8 workerHeapMb=327.8 workerHeapSource=cached
+2026-11-18T22:24:49.206+00:00 [gateway] startup phase: plugins.runtime-post-bind starting total=5677.9ms
+2026-11-18T22:24:50.325+00:00 [gateway] startup trace: plugins.gateway-load.plugin.memory-core configValidationMs=1.4 artifactPreparationMs=0.3 loadMs=233.2 modulePreparationMs=208.4 loadFailedCount=0.0 registerMs=2.3 loadAndRegisterMs=235.6 registerFailedCount=0.0 workersStarted=1 workerScripts=plugin-generation-preparation.worker.js:1
+2026-11-18T22:24:50.560+00:00 [gateway] startup phase: plugins.runtime-post-bind 1353.2ms total=7031.1ms rssMb=977.8 heapUsedMb=223.6 workers=10 workerHeapSamples=9/10 workerHeapMb=430.1 workerHeapSource=cached
+2026-11-18T22:24:50.560+00:00 [gateway] startup phase: plugins.runtime-attach starting total=7031.6ms
+2026-11-18T22:24:50.565+00:00 [gateway] startup phase: plugins.runtime-attach 5.5ms total=7037.1ms rssMb=977.9 heapUsedMb=227.7 workers=10 workerHeapSamples=9/10 workerHeapMb=430.1 workerHeapSource=cached
+2026-11-18T22:24:50.569+00:00 [gateway] agent model: freellm/nvidia/nemotron-3.5-lightning:free (thinking=off, fast=auto)
+2026-11-18T22:24:50.569+00:00 [gateway] http server listening (15 plugins: anthropic, browser, canvas, cua-computer, device-pair, file-transfer, geolocation, github, linux-node, memory-core, ollama, openai, talk-voice, telegram, xai; 4.0s)
+2026-11-18T22:24:50.569+00:00 [gateway] log file: /tmp/openclaw/openclaw-2026-11-18.log
+2026-11-18T22:24:50.570+00:00 [gateway] Older local CLI/SDK versions can bypass Gateway state mutation routing. Use matching CLI/SDK and Gateway versions; direct state writes from another process while this Gateway owns state are unsupported.
+2026-11-18T22:24:50.570+00:00 [gateway] startup phase: sidecars.worker-environments starting total=7042.1ms
+2026-11-18T22:24:50.571+00:00 [gateway] startup phase: sidecars.worker-environments.github-ready starting total=7042.9ms
+2026-11-18T22:24:50.571+00:00 [gateway] startup phase: sidecars.worker-environments.github-ready 0.2ms total=7043.1ms rssMb=978.0 heapUsedMb=230.3 workers=10 workerHeapSamples=9/10 workerHeapMb=430.1 workerHeapSource=cached
+2026-11-18T22:24:50.572+00:00 [gateway] startup phase: sidecars.worker-environments.workspaces starting total=7043.4ms
+2026-11-18T22:24:50.575+00:00 [gateway] native runtime: {"pid":3877,"platform":"linux","arch":"x64","node":"24.22.2","v8":"13.6.233.17-node.63","uv":"1.52.1","openssl":"3.5.9","sqlite":"3.53.4","sqliteClose":{"explicitSqliteCloseReleasesNativeResources":true,"decided":true,"reason":"Node runtime"}}
+2026-11-18T22:24:50.576+00:00 [gateway] worker startup state: {"workerCount":10,"postgresBridgeCount":0,"postgresPoolSelfRootCount":0,"workerLifecycle":[{"script":"client-credential.worker.js","started":1,"retired":[]},{"script":"sqlite-store.worker.js","started":1,"retired":[]},{"script":"gateway-state-owner-heartbeat.worker.js","started":2,"retired":[{"reason":"exit","count":1}]},{"script":"worker-native-lifecycle.worker.js","started":1,"retired":[]},{"script":"openclaw-state-read.worker.js","started":2,"retired":[]},{"script":"openclaw-state-lease-heartbeat.worker.js","started":1,"retired":[]},{"script":"session-transcript.worker.js","started":2,"retired":[]},{"script":"sqlite-snapshot-staging.worker.js","started":2,"retired":[{"reason":"rotation","count":2}]},{"script":"plugin-generation-preparation.worker.js","started":1,"retired":[]}],"workerTaskMetrics":[{"workerClass":"singleton","script":"client-credential.worker.js","tasksCompleted":0,"heapUsedHighWaterBytes":38532560,"gc":[]},{"workerClass":"other","script":"openclaw-state-read.worker.js","tasksCompleted":0,"heapUsedHighWaterBytes":22516144,"gc":[]},{"workerClass":"other","script":"session-transcript.worker.js","tasksCompleted":0,"heapUsedHighWaterBytes":25122488,"gc":[]},{"workerClass":"writer","script":"sqlite-snapshot-staging.worker.js","tasksCompleted":0,"heapUsedHighWaterBytes":23916632,"gc":[]},{"workerClass":"writer","script":"session-transcript.worker.js","tasksCompleted":0,"heapUsedHighWaterBytes":24848008,"gc":[]},{"workerClass":"other","script":"plugin-generation-preparation.worker.js","tasksCompleted":0,"heapUsedHighWaterBytes":25107928,"gc":[]}],"compute":{"limit":3,"active":0,"waitingPools":0,"pendingTasks":0,"pendingBytes":0}}
+2026-11-18T22:24:50.617+00:00 [gateway] startup phase: sidecars.worker-environments.workspaces 45.7ms total=7089.1ms rssMb=986.5 heapUsedMb=236.1 workers=10 workerHeapSamples=9/10 workerHeapMb=430.1 workerHeapSource=cached
+2026-11-18T22:24:50.618+00:00 [gateway] startup phase: sidecars.worker-environments.active starting total=7089.4ms
+2026-11-18T22:24:50.624+00:00 [gateway] startup phase: sidecars.worker-environments.active 6.5ms total=7095.9ms rssMb=986.5 heapUsedMb=236.3 workers=10 workerHeapSamples=9/10 workerHeapMb=430.1 workerHeapSource=cached
+2026-11-18T22:24:50.628+00:00 [gateway] startup phase: sidecars.worker-environments 57.9ms total=7100.0ms rssMb=986.5 heapUsedMb=236.5 workers=10 workerHeapSamples=9/10 workerHeapMb=430.1 workerHeapSource=cached
+2026-11-18T22:24:50.629+00:00 [gateway] starting channels and sidecars...
+2026-11-18T22:24:50.629+00:00 [gateway] startup phase: sidecars.internal-hooks starting total=7100.9ms
+2026-11-18T22:24:50.631+00:00 [gateway] startup phase: sidecars.model-runtime starting total=7103.0ms
+2026-11-18T22:24:50.632+00:00 [gateway] startup phase: sidecars.reply-runtime starting total=7103.6ms
+2026-11-18T22:24:50.728+00:00 [gateway] startup phase: sidecars.internal-hooks 98.8ms total=7199.8ms rssMb=960.8 heapUsedMb=247.2 workers=10 workerHeapSamples=9/10 workerHeapMb=430.1 workerHeapSource=cached
+2026-11-18T22:24:50.851+00:00 [gateway] startup phase: sidecars.reply-runtime 219.2ms total=7322.8ms rssMb=973.5 heapUsedMb=269.5 workers=10 workerHeapSamples=9/10 workerHeapMb=430.1 workerHeapSource=cached
+2026-11-18T22:24:50.859+00:00 [gateway] startup phase: sidecars.worker-environments.publications starting total=7330.5ms
+2026-11-18T22:24:50.916+00:00 [gateway] startup phase: sidecars.model-runtime 284.5ms total=7387.5ms rssMb=976.0 heapUsedMb=289.5 workers=10 workerHeapSamples=9/10 workerHeapMb=430.1 workerHeapSource=cached
+2026-11-18T22:24:50.917+00:00 [gateway] startup phase: sidecars.chat-metadata starting total=7389.2ms
+2026-11-18T22:24:50.918+00:00 [gateway] startup phase: sidecars.chat-metadata 0.6ms total=7389.7ms rssMb=976.1 heapUsedMb=289.9 workers=10 workerHeapSamples=9/10 workerHeapMb=430.1 workerHeapSource=cached
+2026-11-18T22:24:50.918+00:00 [gateway] startup phase: sidecars.plugin-services starting total=7390.0ms
+2026-11-18T22:24:50.920+00:00 [gateway] startup phase: sidecars.channels starting total=7391.6ms
+2026-11-18T22:24:50.940+00:00 [gateway] startup phase: sidecars.channels 19.8ms total=7411.4ms rssMb=988.0 heapUsedMb=250.1 workers=10 workerHeapSamples=9/10 workerHeapMb=430.1 workerHeapSource=cached
+2026-11-18T22:24:51.002+00:00 [gateway] startup phase: sidecars.plugin-services 83.6ms total=7473.6ms rssMb=990.2 heapUsedMb=287.9 workers=10 workerHeapSamples=9/10 workerHeapMb=430.1 workerHeapSource=cached
+2026-11-18T22:24:51.004+00:00 [gateway] startup outcomes: internal-hooks=skipped (not-configured); internal-startup-hook=skipped (no-handlers-loaded); gateway-start-hooks=scheduled; gmail-watcher=skipped (hooks-disabled); gmail-model=skipped (not-configured)
+2026-11-18T22:24:51.006+00:00 [gateway] startup phase: runtime.worker-pool-metrics starting total=7477.9ms
+2026-11-18T22:24:51.009+00:00 [gateway] startup phase: runtime.worker-pool-metrics 2.9ms total=7480.8ms rssMb=990.3 heapUsedMb=295.1 workers=10 workerHeapSamples=9/10 workerHeapMb=430.1 workerHeapSource=cached
+2026-11-18T22:24:51.120+00:00 [gateway] startup phase: sidecars.worker-environments.publications 260.8ms total=7591.4ms rssMb=1014.7 heapUsedMb=290.7 workers=11 workerHeapSamples=9/11 workerHeapMb=430.1 workerHeapSource=cached
+2026-11-18T22:24:51.167+00:00 [gateway] startup phase: ready 47.0ms total=7638.4ms rssMb=1034.7 heapUsedMb=292.0 workers=12 workerHeapSamples=9/12 workerHeapMb=430.1 workerHeapSource=cached
+2026-11-18T22:24:51.167+00:00 [gateway] ready
+2026-11-18T22:24:51.168+00:00 [telegram] [default] starting account (reason: startup)
+2026-11-18T22:24:51.296+00:00 [plugins] memory-core: created managed dreaming cron job.
+2026-11-18T22:24:51.691+00:00 [telegram] [default] starting provider (@void_clipex_bot)
+[skills] Skipping invalid skill: file=~/.openclaw/skills/clipmaker/SKILL.md error=description is required
+2026-11-18T22:24:52.940+00:00 [gateway] database page-cache residency: database=state scope=file-sample resident=100.0% readBytes=16817 diskBytes=0 payloadBytes=0 payloadMessages=0 elapsedMs=9.5 projectionQueryMs=n/a->n/a limited=false
+2026-11-18T22:24:53.034+00:00 [telegram] [diag] isolated polling ingress started account=default
+2026-11-18T22:24:53.484+00:00 [gateway] remote model catalog applied
+2026-11-18T22:24:54.109+00:00 [cron/maintenance] Session registry maintenance completed
+2026-11-18T22:24:54.837+00:00 [gateway] startup phase: post-ready.startup-maintenance starting total=11308.9ms
+2026-11-18T22:24:54.838+00:00 [gateway] startup phase: startup.maintenance.plugin-registry starting total=11309.7ms
+2026-11-18T22:24:54.839+00:00 [gateway] startup phase: startup.maintenance.channels starting total=11310.7ms
+2026-11-18T22:24:54.839+00:00 [gateway] startup phase: startup.maintenance.sessions starting total=11311.2ms
+2026-11-18T22:24:54.840+00:00 [gateway] startup phase: startup.maintenance.pairing starting total=11311.4ms
+2026-11-18T22:24:54.844+00:00 [gateway] startup phase: startup.maintenance.sessions 4.0ms total=11315.2ms rssMb=1677.2 heapUsedMb=341.5 workers=15 workerHeapSamples=12/15 workerHeapMb=734.0 workerHeapSource=cached
+2026-11-18T22:24:54.845+00:00 [gateway] startup phase: startup.maintenance.channels 5.4ms total=11316.1ms rssMb=1677.2 heapUsedMb=341.6 workers=15 workerHeapSamples=12/15 workerHeapMb=734.0 workerHeapSource=cached
+2026-11-18T22:24:54.847+00:00 [gateway] startup phase: startup.maintenance.pairing 7.6ms total=11319.0ms rssMb=1677.2 heapUsedMb=342.0 workers=15 workerHeapSamples=12/15 workerHeapMb=734.0 workerHeapSource=cached
+2026-11-18T22:24:54.984+00:00 [gateway] startup phase: startup.maintenance.plugin-registry 145.5ms total=11455.2ms rssMb=1688.2 heapUsedMb=347.5 workers=15 workerHeapSamples=12/15 workerHeapMb=734.0 workerHeapSource=cached
+2026-11-18T22:24:54.984+00:00 [gateway] startup phase: post-ready.startup-maintenance 146.7ms total=11455.6ms rssMb=1688.2 heapUsedMb=347.5 workers=15 workerHeapSamples=12/15 workerHeapMb=734.0 workerHeapSource=cached
+2026-11-18T22:25:32.351+00:00 [telegram] [diag] isolated polling ingress failed: Telegram getUpdates conflict: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running. Another OpenClaw gateway, script, or Telegram poller may be using this bot token; stop the duplicate poller or switch this account to webhook mode.
+2026-11-18T22:25:32.352+00:00 [telegram] isolated polling ingress failed; restarting in 31.93s.
+2026-11-18T22:26:04.281+00:00 [telegram] [diag] closing stale transport before rebuild
+2026-11-18T22:26:04.281+00:00 [telegram] [diag] rebuilding transport for next polling cycle
+2026-11-18T22:26:04.799+00:00 [telegram] [diag] isolated polling ingress started account=default
+2026-11-18T22:26:40.097+00:00 [telegram] [diag] isolated polling ingress failed: Telegram getUpdates conflict: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running. Another OpenClaw gateway, script, or Telegram poller may be using this bot token; stop the duplicate poller or switch this account to webhook mode.
+2026-11-18T22:26:40.097+00:00 [telegram] isolated polling ingress failed; restarting in 34.26s.
+2026-11-18T22:27:14.358+00:00 [telegram] [diag] closing stale transport before rebuild
+2026-11-18T22:27:14.358+00:00 [telegram] [diag] rebuilding transport for next polling cycle
+2026-11-18T22:27:14.859+00:00 [telegram] [diag] isolated polling ingress started account=default
+2026-11-18T22:27:51.813+00:00 [telegram] [diag] isolated polling ingress failed: Telegram getUpdates conflict: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running. Another OpenClaw gateway, script, or Telegram poller may be using this bot token; stop the duplicate poller or switch this account to webhook mode.
+2026-11-18T22:27:51.813+00:00 [telegram] isolated polling ingress failed; restarting in 33.52s.
+2026-11-18T22:28:25.334+00:00 [telegram] [diag] closing stale transport before rebuild
+2026-11-18T22:28:25.334+00:00 [telegram] [diag] rebuilding transport for next polling cycle
+2026-11-18T22:28:25.832+00:00 [telegram] [diag] isolated polling ingress started account=default
+2026-11-18T22:29:04.053+00:00 [telegram] [diag] isolated polling ingress failed: Telegram getUpdates conflict: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running. Another OpenClaw gateway, script, or Telegram poller may be using this bot token; stop the duplicate poller or switch this account to webhook mode.
+2026-11-18T22:29:04.054+00:00 [telegram] isolated polling ingress failed; restarting in 35.52s.
+2026-11-18T22:29:39.572+00:00 [telegram] [diag] closing stale transport before rebuild
+2026-11-18T22:29:39.573+00:00 [telegram] [diag] rebuilding transport for next polling cycle
+2026-11-18T22:29:40.072+00:00 [telegram] [diag] isolated polling ingress started account=default
+[skills] Skipping invalid skill: file=~/.openclaw/skills/clipmaker/SKILL.md error=description is required
+2026-11-18T22:30:18.380+00:00 [telegram] [diag] isolated polling ingress failed: Telegram getUpdates conflict: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running. Another OpenClaw gateway, script, or Telegram poller may be using this bot token; stop the duplicate poller or switch this account to webhook mode.
+2026-11-18T22:30:18.381+00:00 [telegram] isolated polling ingress failed; restarting in 31.96s.
+2026-11-18T22:30:50.337+00:00 [telegram] [diag] closing stale transport before rebuild
+2026-11-18T22:30:50.337+00:00 [telegram] [diag] rebuilding transport for next polling cycle
+2026-11-18T22:30:50.833+00:00 [telegram] [diag] isolated polling ingress started account=default
+2026-11-18T22:31:25.323+00:00 [telegram] [diag] isolated polling ingress failed: Telegram getUpdates conflict: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running. Another OpenClaw gateway, script, or Telegram poller may be using this bot token; stop the duplicate poller or switch this account to webhook mode.
+2026-11-18T22:31:25.323+00:00 [telegram] isolated polling ingress failed; restarting in 30.54s.
+2026-11-18T22:31:55.865+00:00 [telegram] [diag] closing stale transport before rebuild
+2026-11-18T22:31:55.865+00:00 [telegram] [diag] rebuilding transport for next polling cycle
+2026-11-18T22:31:56.370+00:00 [telegram] [diag] isolated polling ingress started account=default
+2026-11-18T22:32:32.721+00:00 [telegram] [diag] isolated polling ingress failed: Telegram getUpdates conflict: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running. Another OpenClaw gateway, script, or Telegram poller may be using this bot token; stop the duplicate poller or switch this account to webhook mode.
+2026-11-18T22:32:32.721+00:00 [telegram] isolated polling ingress failed; restarting in 35.03s.
+2026-11-18T22:33:07.749+00:00 [telegram] [diag] closing stale transport before rebuild
+2026-11-18T22:33:07.749+00:00 [telegram] [diag] rebuilding transport for next polling cycle
+2026-11-18T22:33:08.247+00:00 [telegram] [diag] isolated polling ingress started account=default
+2026-11-18T22:33:46.147+00:00 [telegram] [diag] isolated polling ingress failed: Telegram getUpdates conflict: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running. Another OpenClaw gateway, script, or Telegram poller may be using this bot token; stop the duplicate poller or switch this account to webhook mode.
+2026-11-18T22:33:46.147+00:00 [telegram] isolated polling ingress failed; restarting in 34.34s.
+2026-11-18T22:34:20.490+00:00 [telegram] [diag] closing stale transport before rebuild
+2026-11-18T22:34:20.490+00:00 [telegram] [diag] rebuilding transport for next polling cycle
+2026-11-18T22:34:20.995+00:00 [telegram] [diag] isolated polling ingress started account=default
+2026-11-18T22:34:58.544+00:00 [telegram] [diag] isolated polling ingress failed: Telegram getUpdates conflict: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running. Another OpenClaw gateway, script, or Telegram poller may be using this bot token; stop the duplicate poller or switch this account to webhook mode.
+2026-11-18T22:34:58.544+00:00 [telegram] isolated polling ingress failed; restarting in 34.12s.
+2026-11-18T22:35:32.667+00:00 [telegram] [diag] closing stale transport before rebuild
+2026-11-18T22:35:32.667+00:00 [telegram] [diag] rebuilding transport for next polling cycle
+2026-11-18T22:35:33.159+00:00 [telegram] [diag] isolated polling ingress started account=default
+2026-11-18T22:36:10.816+00:00 [telegram] [diag] isolated polling ingress failed: Telegram getUpdates conflict: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running. Another OpenClaw gateway, script, or Telegram poller may be using this bot token; stop the duplicate poller or switch this account to webhook mode.
+2026-11-18T22:36:10.816+00:00 [telegram] isolated polling ingress failed; restarting in 34.54s.
+2026-11-18T22:36:45.359+00:00 [telegram] [diag] closing stale transport before rebuild
+2026-11-18T22:36:45.359+00:00 [telegram] [diag] rebuilding transport for next polling cycle
+2026-11-18T22:36:45.858+00:00 [telegram] [diag] isolated polling ingress started account=default
+2026-11-18T22:37:23.674+00:00 [telegram] [diag] isolated polling ingress failed: Telegram getUpdates conflict: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running. Another OpenClaw gateway, script, or Telegram poller may be using this bot token; stop the duplicate poller or switch this account to webhook mode.
+2026-11-18T22:37:23.674+00:00 [telegram] isolated polling ingress failed; restarting in 31.38s.
+2026-11-18T22:37:55.052+00:00 [telegram] [diag] closing stale transport before rebuild
+2026-11-18T22:37:55.052+00:00 [telegram] [diag] rebuilding transport for next polling cycle
+2026-11-18T22:37:55.557+00:00 [telegram] [diag] isolated polling ingress started account=default
+2026-11-18T22:38:31.786+00:00 [telegram] [diag] isolated polling ingress failed: Telegram getUpdates conflict: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running. Another OpenClaw gateway, script, or Telegram poller may be using this bot token; stop the duplicate poller or switch this account to webhook mode.
+2026-11-18T22:38:31.787+00:00 [telegram] isolated polling ingress failed; restarting in 34.01s.
+2026-11-18T22:39:05.793+00:00 [telegram] [diag] closing stale transport before rebuild
+2026-11-18T22:39:05.793+00:00 [telegram] [diag] rebuilding transport for next polling cycle
+2026-11-18T22:39:06.312+00:00 [telegram] [diag] isolated polling ingress started account=default
+2026-11-18T22:39:45.754+00:00 [telegram] [diag] isolated polling ingress failed: Telegram getUpdates conflict: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running. Another OpenClaw gateway, script, or Telegram poller may be using this bot token; stop the duplicate poller or switch this account to webhook mode.
+2026-11-18T22:39:45.754+00:00 [telegram] isolated polling ingress failed; restarting in 32.71s.
+2026-11-18T22:39:53.027+00:00 [gateway] database page-cache residency: database=state scope=file-sample resident=100.0% readBytes=16809 diskBytes=0 payloadBytes=0 payloadMessages=0 elapsedMs=7.2 projectionQueryMs=n/a->n/a limited=false
+2026-11-18T22:40:18.461+00:00 [telegram] [diag] closing stale transport before rebuild
+2026-11-18T22:40:18.461+00:00 [telegram] [diag] rebuilding transport for next polling cycle
+2026-11-18T22:40:18.951+00:00 [telegram] [diag] isolated polling ingress started account=default
+2026-11-18T22:40:56.842+00:00 [telegram] [diag] isolated polling ingress failed: Telegram getUpdates conflict: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running. Another OpenClaw gateway, script, or Telegram poller may be using this bot token; stop the duplicate poller or switch this account to webhook mode.
+2026-11-18T22:40:56.842+00:00 [telegram] isolated polling ingress failed; restarting in 35.56s.
+2026-11-18T22:41:32.403+00:00 [telegram] [diag] closing stale transport before rebuild
+2026-11-18T22:41:32.403+00:00 [telegram] [diag] rebuilding transport for next polling cycle
+2026-11-18T22:41:32.901+00:00 [telegram] [diag] isolated polling ingress started account=default
+2026-11-18T22:42:12.156+00:00 [telegram] [diag] isolated polling ingress failed: Telegram getUpdates conflict: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running. Another OpenClaw gateway, script, or Telegram poller may be using this bot token; stop the duplicate poller or switch this account to webhook mode.
+2026-11-18T22:42:12.156+00:00 [telegram] isolated polling ingress failed; restarting in 34.5s.
+2026-11-18T22:42:46.657+00:00 [telegram] [diag] closing stale transport before rebuild
+2026-11-18T22:42:46.657+00:00 [telegram] [diag] rebuilding transport for next polling cycle
+2026-11-18T22:42:47.157+00:00 [telegram] [diag] isolated polling ingress started account=default
+2026-11-18T22:43:23.841+00:00 [telegram] [diag] isolated polling ingress failed: Telegram getUpdates conflict: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running. Another OpenClaw gateway, script, or Telegram poller may be using this bot token; stop the duplicate poller or switch this account to webhook mode.
+2026-11-18T22:43:23.842+00:00 [telegram] isolated polling ingress failed; restarting in 33.24s.
+2026-11-18T22:43:57.082+00:00 [telegram] [diag] closing stale transport before rebuild
+2026-11-18T22:43:57.082+00:00 [telegram] [diag] rebuilding transport for next polling cycle
+2026-11-18T22:43:57.574+00:00 [telegram] [diag] isolated polling ingress started account=default
+2026-11-18T22:44:36.486+00:00 [telegram] [diag] isolated polling ingress failed: Telegram getUpdates conflict: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running. Another OpenClaw gateway, script, or Telegram poller may be using this bot token; stop the duplicate poller or switch this account to webhook mode.
+2026-11-18T22:44:36.486+00:00 [telegram] isolated polling ingress failed; restarting in 32.14s.
+2026-11-18T22:45:08.630+00:00 [telegram] [diag] closing stale transport before rebuild
+2026-11-18T22:45:08.630+00:00 [telegram] [diag] rebuilding transport for next polling cycle
+2026-11-18T22:45:09.130+00:00 [telegram] [diag] isolated polling ingress started account=default
+2026-11-18T22:45:43.631+00:00 [telegram] [diag] isolated polling ingress failed: Telegram getUpdates conflict: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running. Another OpenClaw gateway, script, or Telegram poller may be using this bot token; stop the duplicate poller or switch this account to webhook mode.
+2026-11-18T22:45:43.632+00:00 [telegram] isolated polling ingress failed; restarting in 31.09s.
+2026-11-18T22:46:14.720+00:00 [telegram] [diag] closing stale transport before rebuild
+2026-11-18T22:46:14.720+00:00 [telegram] [diag] rebuilding transport for next polling cycle
+2026-11-18T22:46:15.215+00:00 [telegram] [diag] isolated polling ingress started account=default
+2026-11-18T22:46:53.253+00:00 [telegram] [diag] isolated polling ingress failed: Telegram getUpdates conflict: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running. Another OpenClaw gateway, script, or Telegram poller may be using this bot token; stop the duplicate poller or switch this account to webhook mode.
+2026-11-18T22:46:53.253+00:00 [telegram] isolated polling ingress failed; restarting in 35.2s.
+2026-11-18T22:47:28.454+00:00 [telegram] [diag] closing stale transport before rebuild
+2026-11-18T22:47:28.455+00:00 [telegram] [diag] rebuilding transport for next polling cycle
+2026-11-18T22:47:28.949+00:00 [telegram] [diag] isolated polling ingress started account=default
+2026-11-18T22:48:02.887+00:00 [telegram] [diag] isolated polling ingress failed: Telegram getUpdates conflict: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running. Another OpenClaw gateway, script, or Telegram poller may be using this bot token; stop the duplicate poller or switch this account to webhook mode.
+2026-11-18T22:48:02.887+00:00 [telegram] isolated polling ingress failed; restarting in 31.21s.
+2026-11-18T22:48:34.097+00:00 [telegram] [diag] closing stale transport before rebuild
+2026-11-18T22:48:34.097+00:00 [telegram] [diag] rebuilding transport for next polling cycle
+2026-11-18T22:48:34.599+00:00 [telegram] [diag] isolated polling ingress started account=default
+2026-11-18T22:49:08.233+00:00 [telegram] [diag] isolated polling ingress failed: Telegram getUpdates conflict: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running. Another OpenClaw gateway, script, or Telegram poller may be using this bot token; stop the duplicate poller or switch this account to webhook mode.
+2026-11-18T22:49:08.233+00:00 [telegram] isolated polling ingress failed; restarting in 35.32s.
+2026-11-18T22:49:43.557+00:00 [telegram] [diag] closing stale transport before rebuild
+2026-11-18T22:49:43.557+00:00 [telegram] [diag] rebuilding transport for next polling cycle
+2026-11-18T22:49:44.055+00:00 [telegram] [diag] isolated polling ingress started account=default
+2026-11-18T22:50:18.436+00:00 [telegram] [diag] isolated polling ingress failed: Telegram getUpdates conflict: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running. Another OpenClaw gateway, script, or Telegram poller may be using this bot token; stop the duplicate poller or switch this account to webhook mode.
+2026-11-18T22:50:18.437+00:00 [telegram] isolated polling ingress failed; restarting in 34.13s.
+2026-11-18T22:50:52.562+00:00 [telegram] [diag] closing stale transport before rebuild
+2026-11-18T22:50:52.562+00:00 [telegram] [diag] rebuilding transport for next polling cycle
+2026-11-18T22:50:53.083+00:00 [telegram] [diag] isolated polling ingress started account=default
+2026-11-18T22:51:28.324+00:00 [telegram] [diag] isolated polling ingress failed: Telegram getUpdates conflict: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running. Another OpenClaw gateway, script, or Telegram poller may be using this bot token; stop the duplicate poller or switch this account to webhook mode.
+2026-11-18T22:51:28.324+00:00 [telegram] isolated polling ingress failed; restarting in 34.83s.
+2026-11-18T22:52:03.157+00:00 [telegram] [diag] closing stale transport before rebuild
+2026-11-18T22:52:03.157+00:00 [telegram] [diag] rebuilding transport for next polling cycle
+2026-11-18T22:52:03.658+00:00 [telegram] [diag] isolated polling ingress started account=default
+2026-11-18T22:52:37.919+00:00 [telegram] [diag] isolated polling ingress failed: Telegram getUpdates conflict: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running. Another OpenClaw gateway, script, or Telegram poller may be using this bot token; stop the duplicate poller or switch this account to webhook mode.
+2026-11-18T22:52:37.919+00:00 [telegram] isolated polling ingress failed; restarting in 32.46s.
+2026-11-18T22:53:10.378+00:00 [telegram] [diag] closing stale transport before rebuild
+2026-11-18T22:53:10.378+00:00 [telegram] [diag] rebuilding transport for next polling cycle
+2026-11-18T22:53:10.885+00:00 [telegram] [diag] isolated polling ingress started account=default
+2026-11-18T22:53:49.816+00:00 [telegram] [diag] isolated polling ingress failed: Telegram getUpdates conflict: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running. Another OpenClaw gateway, script, or Telegram poller may be using this bot token; stop the duplicate poller or switch this account to webhook mode.
+2026-11-18T22:53:49.816+00:00 [telegram] isolated polling ingress failed; restarting in 32.27s.
+2026-11-18T22:54:22.085+00:00 [telegram] [diag] closing stale transport before rebuild
+2026-11-18T22:54:22.085+00:00 [telegram] [diag] rebuilding transport for next polling cycle
+2026-11-18T22:54:22.581+00:00 [telegram] [diag] isolated polling ingress started account=default
+2026-11-18T22:54:53.121+00:00 [gateway] database page-cache residency: database=state scope=file-sample resident=100.0% readBytes=16818 diskBytes=0 payloadBytes=0 payloadMessages=0 elapsedMs=7.9 projectionQueryMs=n/a->n/a limited=false
+2026-11-18T22:54:59.350+00:00 [telegram] [diag] isolated polling ingress failed: Telegram getUpdates conflict: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running. Another OpenClaw gateway, script, or Telegram poller may be using this bot token; stop the duplicate poller or switch this account to webhook mode.
+2026-11-18T22:54:59.350+00:00 [telegram] isolated polling ingress failed; restarting in 33.77s.
+2026-11-18T22:55:33.120+00:00 [telegram] [diag] closing stale transport before rebuild
+2026-11-18T22:55:33.120+00:00 [telegram] [diag] rebuilding transport for next polling cycle
+2026-11-18T22:55:33.626+00:00 [telegram] [diag] isolated polling ingress started account=default
+2026-11-18T22:56:09.354+00:00 [telegram] [diag] isolated polling ingress failed: Telegram getUpdates conflict: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running. Another OpenClaw gateway, script, or Telegram poller may be using this bot token; stop the duplicate poller or switch this account to webhook mode.
+2026-11-18T22:56:09.355+00:00 [telegram] isolated polling ingress failed; restarting in 30.92s.
+2026-11-18T22:56:40.277+00:00 [telegram] [diag] closing stale transport before rebuild
+2026-11-18T22:56:40.277+00:00 [telegram] [diag] rebuilding transport for next polling cycle
+2026-11-18T22:56:40.780+00:00 [telegram] [diag] isolated polling ingress started account=default
+2026-11-18T22:57:18.662+00:00 [telegram] [diag] isolated polling ingress failed: Telegram getUpdates conflict: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running. Another OpenClaw gateway, script, or Telegram poller may be using this bot token; stop the duplicate poller or switch this account to webhook mode.
+2026-11-18T22:57:18.662+00:00 [telegram] isolated polling ingress failed; restarting in 31.35s.
+2026-11-18T22:57:50.011+00:00 [telegram] [diag] closing stale transport before rebuild
+2026-11-18T22:57:50.011+00:00 [telegram] [diag] rebuilding transport for next polling cycle
+2026-11-18T22:57:50.509+00:00 [telegram] [diag] isolated polling ingress started account=default
+2026-11-18T22:58:24.670+00:00 [telegram] [diag] isolated polling ingress failed: Telegram getUpdates conflict: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running. Another OpenClaw gateway, script, or Telegram poller may be using this bot token; stop the duplicate poller or switch this account to webhook mode.
+2026-11-18T22:58:24.670+00:00 [telegram] isolated polling ingress failed; restarting in 30.2s.
+2026-11-18T22:58:54.876+00:00 [telegram] [diag] closing stale transport before rebuild
+2026-11-18T22:58:54.876+00:00 [telegram] [diag] rebuilding transport for next polling cycle
+2026-11-18T22:58:55.371+00:00 [telegram] [diag] isolated polling ingress started account=default
+2026-11-18T22:59:35.348+00:00 [telegram] [diag] isolated polling ingress failed: Telegram getUpdates conflict: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running. Another OpenClaw gateway, script, or Telegram poller may be using this bot token; stop the duplicate poller or switch this account to webhook mode.
+2026-11-18T22:59:35.348+00:00 [telegram] isolated polling ingress failed; restarting in 35.21s.
+[skills] Skipping invalid skill: file=~/.openclaw/skills/clipmaker/SKILL.md error=description is required
+2026-11-18T23:00:10.558+00:00 [telegram] [diag] closing stale transport before rebuild
+2026-11-18T23:00:10.558+00:00 [telegram] [diag] rebuilding transport for next polling cycle
+2026-11-18T23:00:11.051+00:00 [telegram] [diag] isolated polling ingress started account=default
+2026-11-18T23:00:46.769+00:00 [telegram] [diag] isolated polling ingress failed: Telegram getUpdates conflict: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running. Another OpenClaw gateway, script, or Telegram poller may be using this bot token; stop the duplicate poller or switch this account to webhook mode.
+2026-11-18T23:00:46.769+00:00 [telegram] isolated polling ingress failed; restarting in 31.78s.
+2026-11-18T23:01:18.547+00:00 [telegram] [diag] closing stale transport before rebuild
+2026-11-18T23:01:18.548+00:00 [telegram] [diag] rebuilding transport for next polling cycle
+2026-11-18T23:01:19.048+00:00 [telegram] [diag] isolated polling ingress started account=default
+2026-11-18T23:01:54.305+00:00 [telegram] [diag] isolated polling ingress failed: Telegram getUpdates conflict: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running. Another OpenClaw gateway, script, or Telegram poller may be using this bot token; stop the duplicate poller or switch this account to webhook mode.
+2026-11-18T23:01:54.305+00:00 [telegram] isolated polling ingress failed; restarting in 31.41s.
+2026-11-18T23:02:25.711+00:00 [telegram] [diag] closing stale transport before rebuild
+2026-11-18T23:02:25.711+00:00 [telegram] [diag] rebuilding transport for next polling cycle
+2026-11-18T23:02:26.209+00:00 [telegram] [diag] isolated polling ingress started account=default
+2026-11-18T23:03:03.420+00:00 [telegram] [diag] isolated polling ingress failed: Telegram getUpdates conflict: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running. Another OpenClaw gateway, script, or Telegram poller may be using this bot token; stop the duplicate poller or switch this account to webhook mode.
+2026-11-18T23:03:03.420+00:00 [telegram] isolated polling ingress failed; restarting in 34.94s.
+2026-11-18T23:03:38.359+00:00 [telegram] [diag] closing stale transport before rebuild
+2026-11-18T23:03:38.359+00:00 [telegram] [diag] rebuilding transport for next polling cycle
+2026-11-18T23:03:38.850+00:00 [telegram] [diag] isolated polling ingress started account=default
+2026-11-18T23:04:15.685+00:00 [telegram] [diag] isolated polling ingress failed: Telegram getUpdates conflict: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running. Another OpenClaw gateway, script, or Telegram poller may be using this bot token; stop the duplicate poller or switch this account to webhook mode.
+2026-11-18T23:04:15.686+00:00 [telegram] isolated polling ingress failed; restarting in 35.62s.
+2026-11-18T23:04:51.308+00:00 [telegram] [diag] closing stale transport before rebuild
+2026-11-18T23:04:51.308+00:00 [telegram] [diag] rebuilding transport for next polling cycle
+2026-11-18T23:04:51.798+00:00 [telegram] [diag] isolated polling ingress started account=default
+2026-11-18T23:05:29.834+00:00 [telegram] [diag] isolated polling ingress failed: Telegram getUpdates conflict: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running. Another OpenClaw gateway, script, or Telegram poller may be using this bot token; stop the duplicate poller or switch this account to webhook mode.
+2026-11-18T23:05:29.834+00:00 [telegram] isolated polling ingress failed; restarting in 33.76s.
+2026-11-18T23:06:03.595+00:00 [telegram] [diag] closing stale transport before rebuild
+2026-11-18T23:06:03.595+00:00 [telegram] [diag] rebuilding transport for next polling cycle
+2026-11-18T23:06:04.097+00:00 [telegram] [diag] isolated polling ingress started account=default
+2026-11-18T23:06:39.173+00:00 [telegram] [diag] isolated polling ingress failed: Telegram getUpdates conflict: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running. Another OpenClaw gateway, script, or Telegram poller may be using this bot token; stop the duplicate poller or switch this account to webhook mode.
+2026-11-18T23:06:39.173+00:00 [telegram] isolated polling ingress failed; restarting in 33.04s.
+2026-11-18T23:07:12.215+00:00 [telegram] [diag] closing stale transport before rebuild
+2026-11-18T23:07:12.215+00:00 [telegram] [diag] rebuilding transport for next polling cycle
+2026-11-18T23:07:12.707+00:00 [telegram] [diag] isolated polling ingress started account=default
+2026-11-18T23:07:46.901+00:00 [telegram] [diag] isolated polling ingress failed: Telegram getUpdates conflict: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running. Another OpenClaw gateway, script, or Telegram poller may be using this bot token; stop the duplicate poller or switch this account to webhook mode.
+2026-11-18T23:07:46.902+00:00 [telegram] isolated polling ingress failed; restarting in 32.35s.
+2026-11-18T23:08:19.250+00:00 [telegram] [diag] closing stale transport before rebuild
+2026-11-18T23:08:19.250+00:00 [telegram] [diag] rebuilding transport for next polling cycle
+2026-11-18T23:08:19.751+00:00 [telegram] [diag] isolated polling ingress started account=default
+2026-11-18T23:09:53.208+00:00 [gateway] database page-cache residency: database=state scope=file-sample resident=100.0% readBytes=16809 diskBytes=0 payloadBytes=0 payloadMessages=0 elapsedMs=6.8 projectionQueryMs=n/a->n/a limited=false
+2026-11-18T23:19:43.526+00:00 [admission] closed: restart-signal fence
+2026-11-18T23:19:43.532+00:00 [admission] closed: stop (SIGTERM)
+2026-11-18T23:19:43.532+00:00 [gateway] received SIGTERM; shutting down
+2026-11-18T23:19:43.554+00:00 [gateway] shutdown budget at shutdown: drain=74972ms shutdown=84972ms reserve=10000ms exitMargin=5000ms; source=systemd system hosted-compute-agent.service TimeoutStopUSec=90000ms
+2026-11-18T23:19:43.621+00:00 [gmail-watcher] gmail watcher stopped
+2026-11-18T23:19:43.739+00:00 [shutdown] completed cleanly in 170ms
