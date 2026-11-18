@@ -2,12 +2,17 @@ name: bot
 
 on:
   schedule:
+    # two crons so the next window starts right after the previous one ends
     - cron: "0 */6 * * *"
+    - cron: "15 */6 * * *"
   workflow_dispatch:
 
 concurrency:
   group: bot
   cancel-in-progress: false
+
+permissions:
+  contents: write
 
 jobs:
   run:
