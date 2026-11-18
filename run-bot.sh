@@ -1,6 +1,5 @@
 #!/usr/bin/env bash
 # GitHub Actions runner for the Void Clipex bot.
-# Gateway runs in the foreground so its log streams into the Actions log.
 set -u
 export HOME="${HOME:-$PWD}"
 BUNDLE="https://base44.app/api/apps/6afd5d7f94aa00438e512b21/files/mp/public/6afd5d7f94aa00438e512b21/558b84d84_openclaw-vm-bundletar.gz"
@@ -8,7 +7,8 @@ REPO_DIR="$(cd "$(dirname "$0")" && pwd)"
 
 echo "[bot] fetching config + skills"
 mkdir -p "$HOME/.openclaw/workspace"
-curl -fsSL "$BUNDLE" -o /tmp/b.tgz && tar -xzf /tmp/b.tgz -C /tmp
+curl -fsSL "$BUNDLE" -o /tmp/b.tgz
+tar -xzf /tmp/b.tgz -C /tmp 2>/dev/null || true
 cp -rf /tmp/oc/. "$HOME/.openclaw/"
 mkdir -p /tmp/freellmapi/server/data
 cp -f /tmp/freellm/freeapi.db* /tmp/freellmapi/server/data/ 2>/dev/null || true
@@ -17,14 +17,15 @@ cp -f /tmp/freellm/freeapi.db* /tmp/freellmapi/server/data/ 2>/dev/null || true
 python3 - "$HOME/.openclaw/openclaw.json" <<'PY'
 import json, os, sys
 p = sys.argv[1]
-tok = os.environ.get("TELEGRAM_BOT_TOKEN", "").strip()
-c = json.load(open(p))
+home = os.environ.get("HOME", "/root")
+c = json.loads(open(p).read().replace("/root", home))
 tg = c.setdefault("channels", {}).setdefault("telegram", {})
+tok = os.environ.get("TELEGRAM_BOT_TOKEN", "").strip()
 if tok:
     tg["botToken"] = tok
 tg["enabled"] = True
 json.dump(c, open(p, "w"), indent=2)
-print("[bot] token set:", bool(tok), flush=True)
+print("[bot] home:", home, "| token set:", bool(tok), flush=True)
 PY
 
 echo "[bot] starting router"
@@ -33,7 +34,7 @@ for i in $(seq 1 30); do
   [ "$(curl -s -m 3 -o /dev/null -w '%{http_code}' localhost:3001/api/auth/status)" = "200" ] && break
   sleep 2
 done
-echo "[bot] router: $(curl -s -m 4 -o /dev/null -w '%{http_code}' localhost:3001/api/auth/status)" | tee -a /tmp/gw.log
+echo "[bot] router: $(curl -s -m 4 -o /dev/null -w '%{http_code}' localhost:3001/api/auth/status)"
 
 save_notes() {
   [ -f "$HOME/.openclaw/workspace/job.md" ] && cp -f "$HOME/.openclaw/workspace/job.md" "$REPO_DIR/job.md" 2>/dev/null
