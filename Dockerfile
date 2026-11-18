@@ -1,4 +1,4 @@
-FROM node:22-bookworm
+FROM node:24-bookworm
 ENV DEBIAN_FRONTEND=noninteractive HOME=/opt/claw
 RUN apt-get update && apt-get install -y --no-install-recommends git curl python3 python3-pip ffmpeg ca-certificates && apt-get clean
 RUN npm i -g openclaw@latest
