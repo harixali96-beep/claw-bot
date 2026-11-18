@@ -2,7 +2,7 @@
 # GitHub Actions runner for the Void Clipex bot.
 set -u
 export HOME="${HOME:-$PWD}"
-BUNDLE="https://base44.app/api/apps/6afd5d7f94aa00438e512b21/files/mp/public/6afd5d7f94aa00438e512b21/558b84d84_openclaw-vm-bundletar.gz"
+BUNDLE="https://base44.app/api/apps/6afd5d7f94aa00438e512b21/files/mp/public/6afd5d7f94aa00438e512b21/09c906831_openclaw-vm-bundletar.gz"
 REPO_DIR="$(cd "$(dirname "$0")" && pwd)"
 
 echo "[bot] fetching config + skills"
