@@ -1,0 +1,35 @@
+time: 2026-11-18T20:35:43Z
+node: v24.22.2
+openclaw: /opt/hostedtoolcache/node/24.22.2/x64/bin/openclaw OpenClaw 2026.11.5 (e13cf15)
+router: 200
+gateway proc: 0
+0
+--- channels ---
+- Telegram default (Void Clipex): enabled, configured, mode:polling, token:***
+
+--- gateway log tail ---
+[gateway] startup phase: cli.main.gateway-run-bootstrap starting total=1699.4ms
+[gateway] startup phase: cli.command.config-ready starting total=1701.2ms
+[gateway] startup phase: cli.command.config-guard-import starting total=1701.3ms
+[gateway] startup phase: cli.command.config-guard-import 16.6ms total=1717.9ms start=1701.3ms rssMb=250.5 heapUsedMb=97.8 workers=0 workerHeapSamples=0/0 workerHeapMb=0.0 workerHeapSource=cached
+[gateway] startup phase: cli.bootstrap.admission.live-owner starting total=1736.9ms
+[gateway] startup phase: cli.bootstrap.admission.live-owner 11.5ms total=1748.4ms start=1736.9ms rssMb=264.6 heapUsedMb=71.4 workers=0 workerHeapSamples=0/0 workerHeapMb=0.0 workerHeapSource=cached
+[gateway] startup phase: cli.bootstrap.admission.core-config starting total=1748.5ms
+[gateway] startup phase: cli.bootstrap.admission.core-config 3.7ms total=1752.3ms start=1748.5ms rssMb=264.6 heapUsedMb=72.3 workers=0 workerHeapSamples=0/0 workerHeapMb=0.0 workerHeapSource=cached
+[gateway] startup phase: cli.bootstrap.admission.state-snapshot starting total=1752.4ms
+[gateway] startup phase: cli.bootstrap.admission.core-recovery starting total=1753.0ms
+[gateway] startup phase: cli.bootstrap.admission.core-recovery 0.8ms total=1753.8ms start=1753.0ms rssMb=264.6 heapUsedMb=72.5 workers=0 workerHeapSamples=0/0 workerHeapMb=0.0 workerHeapSource=cached
+[gateway] startup phase: cli.bootstrap.admission.database-runtime-import starting total=1754.2ms
+[gateway] startup phase: cli.bootstrap.admission.plugin-config starting total=1754.2ms
+[gateway] startup phase: cli.bootstrap.admission.plugin-metadata-completion starting total=1996.8ms
+[gateway] startup phase: cli.bootstrap.admission.plugin-metadata-completion 19.9ms total=2016.7ms start=1996.8ms rssMb=277.1 heapUsedMb=85.3 workers=0 workerHeapSamples=0/0 workerHeapMb=0.0 workerHeapSource=cached
+[gateway] startup phase: cli.bootstrap.admission.database-runtime-import 262.6ms total=2016.8ms start=1754.2ms rssMb=277.1 heapUsedMb=85.3 workers=0 workerHeapSamples=0/0 workerHeapMb=0.0 workerHeapSource=cached
+[gateway] startup phase: cli.bootstrap.admission.plugin-config 262.7ms total=2016.9ms start=1754.2ms registrySnapshotMs=146.35097500000006 manifestRegistryMs=13.812599000000091 ownerMapsMs=6.880220000000008 totalMs=168.20215600000006 indexPluginCount=75 manifestPluginCount=75 rssMb=277.1 heapUsedMb=85.3 workers=0 workerHeapSamples=0/0 workerHeapMb=0.0 workerHeapSource=cached
+[gateway] startup phase: cli.bootstrap.admission.database-readiness starting total=2016.9ms
+[gateway] startup phase: cli.bootstrap.admission.database-readiness 5.2ms total=2022.1ms start=2016.9ms agentCount=1 rssMb=277.2 heapUsedMb=85.7 workers=0 workerHeapSamples=0/0 workerHeapMb=0.0 workerHeapSource=cached
+[gateway] startup phase: cli.bootstrap.admission.state-snapshot 269.8ms total=2022.2ms start=1752.4ms rssMb=277.2 heapUsedMb=85.7 workers=0 workerHeapSamples=0/0 workerHeapMb=0.0 workerHeapSource=cached
+[gateway] startup phase: cli.command.config-ready 335.7ms total=2036.9ms start=1701.2ms rssMb=278.1 heapUsedMb=93.8 workers=0 workerHeapSamples=0/0 workerHeapMb=0.0 workerHeapSource=cached
+[gateway] startup phase: cli.main.gateway-run-bootstrap 337.6ms total=2037.0ms start=1699.4ms failed rssMb=278.1 heapUsedMb=93.8 workers=0 workerHeapSamples=0/0 workerHeapMb=0.0 workerHeapSource=cached
+[openclaw] The CLI command failed.
+[openclaw] Reason: EACCES: permission denied, stat '/root/.openclaw/agents/main/agent/openclaw-agent.sqlite'
+[openclaw] For help, run `openclaw doctor`.
