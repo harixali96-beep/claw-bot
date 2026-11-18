@@ -57,6 +57,7 @@ if ! kill -0 "$GW_PID" 2>/dev/null; then
   sleep 25
 fi
 echo "[bot] gateway pid=$GW_PID alive=$(kill -0 "$GW_PID" 2>/dev/null && echo yes || echo no)"
+curl -s -m 10 "https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendMessage" -d chat_id=7473905437 -d text="bot online (github actions)" >/dev/null 2>&1 || true
 
 write_status() {
   local out="$REPO_DIR/status.txt"
@@ -66,8 +67,9 @@ write_status() {
     echo "openclaw: $(command -v openclaw) $(openclaw --version 2>/dev/null | head -1)"
     echo "router: $(curl -s -m 4 -o /dev/null -w '%{http_code}' localhost:3001/api/auth/status)"
     echo "gateway proc: $(pgrep -fc 'openclaw gateway run' 2>/dev/null || echo 0)"
+    echo "gateway port: $(curl -s -m 4 -o /dev/null -w '%{http_code}' http://127.0.0.1:18789/ 2>/dev/null)"
     echo "--- channels ---"
-    openclaw channels status 2>&1 | grep -i -A1 telegram | head -6
+    timeout 25 openclaw channels status 2>&1 | grep -i -A1 telegram | head -6 || echo "channels status timeout"
     echo "--- gateway log tail ---"
     tail -25 /tmp/oc-gateway.log 2>/dev/null | sed 's/\x1b\[[0-9;]*m//g'
   } > "$out" 2>&1
