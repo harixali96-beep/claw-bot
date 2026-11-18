@@ -48,6 +48,28 @@ echo "[bot] starting router"
 sleep 10
 echo "[bot] starting gateway"
 ( nohup openclaw gateway run >/tmp/oc-gateway.log 2>&1 & )
+sleep 30
+
+write_status() {
+  local out="$REPO_DIR/status.txt"
+  {
+    echo "time: $(date -u +%FT%TZ)"
+    echo "node: $(node -v 2>/dev/null)"
+    echo "openclaw: $(command -v openclaw) $(openclaw --version 2>/dev/null | head -1)"
+    echo "router: $(curl -s -m 4 -o /dev/null -w '%{http_code}' localhost:3001/api/auth/status)"
+    echo "gateway proc: $(pgrep -fc 'openclaw gateway run' 2>/dev/null || echo 0)"
+    echo "--- channels ---"
+    openclaw channels status 2>&1 | grep -i -A1 telegram | head -6
+    echo "--- gateway log tail ---"
+    tail -25 /tmp/oc-gateway.log 2>/dev/null | sed 's/\x1b\[[0-9;]*m//g'
+  } > "$out" 2>&1
+  cd "$REPO_DIR" || return 0
+  git config user.name "claw-bot" >/dev/null 2>&1
+  git config user.email "bot@users.noreply.github.com" >/dev/null 2>&1
+  git add status.txt >/dev/null 2>&1
+  git commit -m "bot status [skip ci]" >/dev/null 2>&1 && git push >/dev/null 2>&1
+}
+write_status
 
 for i in $(seq 1 340); do
   pgrep -f "node dist/index.js" >/dev/null 2>&1 || ( cd /tmp/freellmapi/server && PORT=3001 HOST=127.0.0.1 nohup node dist/index.js >>/tmp/freellm.log 2>&1 & )
@@ -55,6 +77,7 @@ for i in $(seq 1 340); do
   if [ $((i % 20)) -eq 0 ]; then
     echo "[bot] alive $((i)) min | router:$(curl -s -m 4 -o /dev/null -w '%{http_code}' localhost:3001/api/auth/status)"
     save_notes
+    write_status
   fi
   sleep 60
 done
