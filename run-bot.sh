@@ -57,7 +57,7 @@ curl -s -m 10 "https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendMessage" \
 echo "[bot] starting gateway in foreground"
 for attempt in 1 2 3 4 5 6; do
   echo "[bot] gateway attempt $attempt at $(date -u +%FT%TZ)"
-  timeout 3300 openclaw gateway run --force 2>&1 | tee /tmp/gw.log | sed 's/\x1b\[[0-9;]*m//g'
+  timeout 19800 openclaw gateway run --force 2>&1 | tee /tmp/gw.log | sed 's/\x1b\[[0-9;]*m//g'
   echo "[bot] gateway exited (attempt $attempt) at $(date -u +%FT%TZ)"
   cp -f /tmp/gw.log "$REPO_DIR/gw.log" 2>/dev/null || true
   ( cd "$REPO_DIR" && git config user.name claw-bot && git config user.email bot@users.noreply.github.com && git add gw.log >/dev/null 2>&1 && git commit -m "gw log [skip ci]" >/dev/null 2>&1 && git push >/dev/null 2>&1 ) || true
