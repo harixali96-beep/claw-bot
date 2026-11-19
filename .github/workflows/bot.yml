@@ -2,7 +2,6 @@ name: bot
 
 on:
   schedule:
-    # two crons so the next window starts right after the previous one ends
     - cron: "0 */6 * * *"
     - cron: "15 */6 * * *"
   workflow_dispatch:
@@ -45,4 +44,5 @@ jobs:
       - name: run bot
         env:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
         run: bash run-bot.sh
