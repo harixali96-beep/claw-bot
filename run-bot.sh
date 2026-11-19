@@ -34,6 +34,34 @@ json.dump(c, open(p, "w"), indent=2)
 print("[bot] home:", home, "| token set:", bool(tok), flush=True)
 PY
 
+
+# --- OpenRouter free-model chain (injected when key present) ---
+python3 - "$HOME/.openclaw/openclaw.json" <<'PY2'
+import json, os, sys
+p = sys.argv[1]
+key = os.environ.get("OPENROUTER_API_KEY", "").strip()
+if not key:
+    sys.exit(0)
+order = [("nvidia/nemotron-3-ultra-550b-a55b:free",1000000),("baidu/ernie-5.5-flash-preview:free",1024000),
+         ("nvidia/nemotron-3.5-super-vl:free",1000000),("inclusionai/ling-3.2-flash:free",1048576),
+         ("particle-ai/particle-1:free",1048576),("nvidia/nemotron-3.5-lightning:free",1000000),
+         ("thinkingmachines/inkling-2-small:free",1048576),("google/gemma-4-31b-it:free",262144),
+         ("liquid/lfm-3-1.7b:free",262144)]
+c = json.load(open(p))
+models = [{"id":m,"name":m,"contextWindow":ctx,"maxTokens":8192,"input":["text"],
+           "cost":{"input":0,"output":0,"cacheRead":0,"cacheWrite":0},"reasoning":False,
+           "compat":{"supportsTools":True,"supportsTemperature":True,"supportsUsageInStreaming":True}} for m,ctx in order]
+c.setdefault("models",{}).setdefault("providers",{})["openrouter"] = {
+    "baseUrl":"https://openrouter.ai/api/v1","api":"openai-completions","apiKey":key,"models":models}
+d = c.setdefault("agents",{}).setdefault("defaults",{})
+d["models"] = {("openrouter/"+m):{} for m,_ in order}
+d["models"]["freellm/auto"] = {}
+d["model"] = {"primary":"openrouter/"+order[0][0],
+              "fallbacks":["openrouter/"+m for m,_ in order[1:]]+["freellm/auto"]}
+json.dump(c, open(p,"w"), indent=2)
+print("[bot] openrouter models installed:", len(order))
+PY2
+
 echo "[bot] starting router"
 ( cd /tmp/freellmapi/server && PORT=3001 HOST=127.0.0.1 nohup node dist/index.js >/tmp/freellm.log 2>&1 & )
 for i in $(seq 1 30); do
