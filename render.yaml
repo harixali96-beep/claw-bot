@@ -1,0 +1,16 @@
+services:
+  - type: web
+    name: claw-bot
+    runtime: docker
+    plan: free
+    region: singapore
+    dockerfilePath: ./Dockerfile
+    healthCheckPath: /
+    autoDeploy: true
+    envVars:
+      - key: TELEGRAM_BOT_TOKEN
+        sync: false
+      - key: NODE_OPTIONS
+        value: --max-old-space-size=380
+      - key: BOT_LOW_RAM
+        value: "1"
