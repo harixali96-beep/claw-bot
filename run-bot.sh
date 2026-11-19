@@ -42,11 +42,13 @@ p = sys.argv[1]
 key = os.environ.get("OPENROUTER_API_KEY", "").strip()
 if not key:
     sys.exit(0)
-order = [("nvidia/nemotron-3-ultra-550b-a55b:free",1000000),("baidu/ernie-5.5-flash-preview:free",1024000),
-         ("nvidia/nemotron-3.5-super-vl:free",1000000),("inclusionai/ling-3.2-flash:free",1048576),
-         ("particle-ai/particle-1:free",1048576),("nvidia/nemotron-3.5-lightning:free",1000000),
-         ("thinkingmachines/inkling-2-small:free",1048576),("google/gemma-4-31b-it:free",262144),
-         ("liquid/lfm-3-1.7b:free",262144)]
+order = [("nvidia/nemotron-3-ultra-550b-a55b:free",1000000),("nvidia/nemotron-3.5-super-vl:free",1000000),
+         ("baidu/ernie-5.5-flash-preview:free",1024000),("particle-ai/particle-1:free",1048576),
+         ("inclusionai/ling-3.2-flash:free",1048576),("google/gemma-4-31b-it:free",262144),
+         ("thinkingmachines/inkling-2-small:free",1048576),("nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free",256000),
+         ("cohere/north-mini-code:free",256000),("dots-studio/dots-3-note-preview:free",512000),
+         ("recursive/flint-v1.0:free",262144),("nvidia/nemotron-3.5-lightning:free",1000000),
+         ("google/gemma-4-26b-a4b-it:free",262144),("liquid/lfm-3-1.7b:free",262144)]
 c = json.load(open(p))
 models = [{"id":m,"name":m,"contextWindow":ctx,"maxTokens":8192,"input":["text"],
            "cost":{"input":0,"output":0,"cacheRead":0,"cacheWrite":0},"reasoning":False,
