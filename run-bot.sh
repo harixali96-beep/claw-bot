@@ -5,6 +5,12 @@ export HOME="${HOME:-$PWD}"
 BUNDLE="https://base44.app/api/apps/6afd5d7f94aa00438e512b21/files/mp/public/6afd5d7f94aa00438e512b21/a57c5e21a_openclaw-vm-bundletar.gz"
 REPO_DIR="$(cd "$(dirname "$0")" && pwd)"
 
+# --- Render/health: tiny HTTP endpoint so free web services stay healthy ---
+if [ -n "${PORT:-}" ]; then
+  ( cd /tmp && nohup python3 -m http.server "$PORT" --bind 0.0.0.0 > /tmp/httpd.log 2>&1 & )
+  echo "[bot] health endpoint on :$PORT"
+fi
+
 echo "[bot] fetching config + skills"
 mkdir -p "$HOME/.openclaw/workspace"
 curl -fsSL "$BUNDLE" -o /tmp/b.tgz
