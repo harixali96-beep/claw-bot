@@ -3,7 +3,7 @@
 # Needs env TELEGRAM_BOT_TOKEN.
 set -u
 export HOME="${HOME:-/opt/claw}"
-BUNDLE="https://base44.app/api/apps/6afd5d7f94aa00438e512b21/files/mp/public/6afd5d7f94aa00438e512b21/09c906831_openclaw-vm-bundletar.gz"
+BUNDLE="https://base44.app/api/apps/6afd5d7f94aa00438e512b21/files/mp/public/6afd5d7f94aa00438e512b21/a57c5e21a_openclaw-vm-bundletar.gz"
 DATA="/opt/claw/freellmapi/server/data"
 
 mkdir -p "$HOME/.openclaw" "$DATA" 2>/dev/null || true
